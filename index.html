@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Daphlex - Freebies Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Styles -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <link href="./assets/css/coming.html" rel="stylesheet">
+    <link href="./assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="./assets/css/animate.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div id="map-canvas" />
+    </div>
+
+    <div class="row-fluid toggle-menu">
+        <div class="span6 contact">
+            <h3>Contacts</h3>
+
+            <div class="span4">
+                <strong>Address</strong>
+
+                <p>
+                    ScienceMathsMaster<br>
+                    Science, Maths<br>
+                    Knowledge World
+			
+                </p>
+
+            </div>
+            <div class="span5">
+
+                <p><strong>E-mail:</strong> admin@sciencemathsmaster.com</p>
+
+            </div>
+
+            <div class="span12">
+                <ul class="mini-social">
+                    <li>
+                        <a href="#" title="Twitter" class="a-icon twitter"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Facebook" class="a-icon facebook"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Dribbble" class="a-icon dribbble"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Instagram" class="a-icon instagram"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Google Plus" class="a-icon googleplus"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="YouTube" class="a-icon youtube"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Email Us" class="a-icon email"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="Subscribe via RSS" class="a-icon rss"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End Toggle Menu -->
+
+    <div class="toggle-btn"><span>+</span></div>
+
+
+    <div class="row-fluid coming">
+        <div class="span12">
+            <a class="brand" href="#">
+                <img alt="logo" src="./assets/img/logo-big.png"></a>
+
+            <h3>We will be back bigger and better!</h3>
+
+            <p>
+            Well... we are changing and we promise to offer you a ton of free sources. You will be able to access new features,</p>
+            <p>The site will be new and blazing fast than before, in the meantime please use our weebly site. To keep updated join the notify me list</p>
+            <p>Thank You.</p>
+            <p>Admin</p>
+            <form class="special" method="post" action="http://rsdicing.com/send_form_email.php">
+            <input class="" name="email" placeholder="E-mail" required
+                type="email" value="">
+            <button class="btn btn-success btn-large">
+                Notify me</button>
+            </form> 
+            <span class="form-info">We hate spam. Trust us!</span>
+        </div>
+        <!--/span-->
+        <div class="hero-pattern">
+            <span class="orange"></span><span class="green"></span>
+        </div>
+    </div>
+    <!-- End Coming -->
+
+
+    <!-- JS -->
+    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/bootstrap-transition.js"></script>
+    <script src="./assets/js/bootstrap-alert.js"></script>
+    <script src="./assets/js/bootstrap-modal.js"></script>
+    <script src="./assets/js/bootstrap-dropdown.js"></script>
+    <script src="./assets/js/bootstrap-scrollspy.js"></script>
+    <script src="./assets/js/bootstrap-tab.js"></script>
+    <script src="./assets/js/bootstrap-tooltip.js"></script>
+    <script src="./assets/js/bootstrap-popover.js"></script>
+    <script src="./assets/js/bootstrap-button.js"></script>
+    <script src="./assets/js/bootstrap-collapse.js"></script>
+    <script src="./assets/js/bootstrap-carousel.js"></script>
+    <script src="./assets/js/bootstrap-typeahead.js"></script>
+    <script src="./assets/js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBj_v9VSl-Mq1-yIYjLCoAjjRC_9Kadrk&amp;sensor=false">
+    </script>
+    <script src="./assets/js/global.js"></script>
+    <script src="./assets/js/waypoints.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.actooltip').tooltip();
+            $('.grid').mixitup();
+
+            $('.toggle-btn').click(function () {
+                $('.toggle-menu').slideToggle('slow', function () {
+
+                });
+            });
+            loadMap();
+            ComingAnimations();
+
+        });
+    </script>
+</body>
+</html>
